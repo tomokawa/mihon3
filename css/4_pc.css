@@ -10,8 +10,13 @@
 	nav{
 	}
 		nav ul li{
-			width:196px;
+			width:194px;
+			border:solid 1px #999;
 		}
+			nav ul li ul li{
+				position:relative;
+				left:-1px;
+			}
 		
 	#sect1{
 		width:510px;/* 980 -aside1(450 +padding5*2) -自padding5*2 */
