@@ -4,10 +4,15 @@
 		width:980px;
 	}
 	
-	#btn{
+	#btn div{
+		line-height:50px;
 	}
+		#btnsize{
+			clear:none;
+		}
 	
 	nav{
+		width:980px;
 	}
 		nav ul li{
 			width:194px;
@@ -19,7 +24,7 @@
 			}
 	
 	.top{
-		padding-top:32px;/* clear:bothによりmargin不可; */
+		margin-top:32px;/* 30 +border1*2 */
 	}
 	
 	#sect1{
@@ -29,8 +34,6 @@
 	#div1{
 		width:450px;/* 5(80 +margin5*2) */
 	}
-		#div1 img{
-		}
 	
 	#sect2{
 		width:690px;/* 980 -(270 +padding5*2) -自padding5*2 */
@@ -39,8 +42,6 @@
 	#div2{
 		width:270px;/* 3(80 +margin5*2) */
 	}
-		#div2 img{
-		}
 	
 		footer div{
 			width:220px;/* 980*25% -liのmarginL15 -margin5*2 */

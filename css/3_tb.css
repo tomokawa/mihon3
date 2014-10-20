@@ -1,28 +1,13 @@
 @charset "UTF-8";
 @media(min-width:480px){
-	#wrapper{
-	}
-	
-	header{
-		overflow:hidden;
-	}
 	h1{
 		float:left;
 	}
 	
-	#btn{
-		line-height:50px;
-		float:right;
-	}
-		#btn div{
-			float:left;
-		}
-		#btnview{
-			
-		}
 		#btnsize{
-			
+			clear:right;
 		}
+	
 		#btnLR{
 			display:none;
 		}
@@ -34,47 +19,33 @@
 			float:left;
 			width:20%;
 		}
-			nav ul li ul li{
-				clear:both;
-			}
 	
 	.top{
-		padding-top:30px;/* clear:bothによりmargin不可; */
+		margin-top:30px;
 	}
 	
 	#sect1{
-		width:;
+		width:47.7%;
 		float:left;
 	}
 	
 	#div1{
-		float:left;
+		width:47.7%;
+		float:right;
 	}
-		#div1 img{
-			width:;
-			float:left;
-		}
 	
 	#sect2{
-		width:;
+		width:47.7%;
 		float:right;
 	}
 	
 	#div2{
-		float:right;
+		width:47.7%;
+		float:left;
 	}
-		#div2 img{
-			width:;
-			float:left;
-		}
 	
 footer{
-	clear:both;
 }
-		footer div{
-			width:;
-			float:left;
-		}
 	address{
 		clear:both;
 	}

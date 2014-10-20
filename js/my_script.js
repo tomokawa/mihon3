@@ -103,3 +103,27 @@ $(function(){
 	});
 });
 
+/*レスポンシブ画像切替(breakpoints.js)*/
+$(function() {
+	$(window).setBreakpoints({
+		distinct: true,
+		breakpoints: [ 1, 480, 980 ]
+	});
+	
+	$(window).bind('enterBreakpoint1',function() {
+		$('.sp-img').each(function() {
+			$(this).attr('src', $(this).data('img'));
+		});
+	});
+	$(window).bind('enterBreakpoint480',function() {
+		$('.sp-img').each(function() {
+			$(this).attr('src', $(this).data('img').replace('_sp', '_tb'));
+		});
+	});
+	$(window).bind('enterBreakpoint980',function() {
+		$('.sp-img').each(function() {
+			$(this).attr('src', $(this).data('img').replace('_sp', '_pc'));
+		});
+	});
+});
+

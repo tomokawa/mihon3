@@ -18,6 +18,10 @@
 <link rel="stylesheet" type="text/css" href="css/2_sp.css" />
 <link rel="stylesheet" type="text/css" href="css/3_tb.css" />
 <link rel="stylesheet" type="text/css" href="css/4_pc.css" />
+<script type='text/javascript' src='js/jquery-2.1.1.min.js'></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type='text/javascript' src='js/breakpoints.js'></script>
+<script type='text/javascript' src='js/my_script.js'></script>
 <!-- IE8以下用に2つのスクリプトを記述
 		html5shiv.js: IE8以下にHTML5の要素を認識するようにさせる
 		respond.js: IE8以下にMedia Queriesの代替え機能を提供 -->
@@ -35,7 +39,6 @@
 <!-- スクリプトでブロッキングを起こさないものはここに記述
 		可能であれば「async（文書の読み込みが完了した時点でスクリプトを実行）」を使用
 		Example: <script src="" async></script> -->
-<script type='text/javascript' src='js/jquery-2.1.1.min.js'></script>
 <script type="text/javascript">
 <!--
 
@@ -56,13 +59,13 @@ $(function(){
 		<h1><a href="index.html" title="TOPページ"><img src="images/logo.jpg" alt="sept@" /></a></h1>
 		<div id="btn">
 			<div id="btnview">
-				<span>表示：</span>
+				<span>表示</span>
 				<button id="btnPC" type="button" name="#" value="#">パソコン</button>
 				<button id="btnSP" type="button" name="#" value="#">スマホ</button>
 			</div><!-- btnview -->
 			
 			<div id="btnsize">
-				<span>文字サイズ：</span>
+				<span>文字</span>
 				<button id="btnL" type="button" name="#" value="#">大</button>
 				<button id="btnM" type="button" name="#" value="#">中</button>
 				<button id="btnS" type="button" name="#" value="#">小</button>
@@ -127,6 +130,9 @@ $(function(){
 	</nav>
 	
 	<div class="top">
+		<!--
+		<img class="sp-img" data-img="images/_sp.jpg" />
+		-->
 		<img id="img1" src="images/4.jpg" alt="#" />
 		<img id="img2" src="images/3.jpg" alt="#" />
 	</div>
@@ -155,16 +161,16 @@ $(function(){
 		</section><!-- sect1 -->
 		
 		<div id="div1">
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
 		</div><!-- div1 -->
 		
 		<section id="sect2">
@@ -175,15 +181,12 @@ $(function(){
 		</section><!-- sect2 -->
 		
 		<div id="div2">
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
-			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
+			<p><a href="#"><img src="images/noimage_tmb.jpg" alt="#" width="80px" height="80px" /></a></p>
 		</div><!-- div2 -->
 		
 		<footer>
@@ -232,7 +235,5 @@ $(function(){
 <!-- スクリプトでブロッキングを起こすものはここに記述
 		ブロッキングを起こす原因としては、
 		CSSのセレクタ操作（IE）、負荷の高いDOM操作、多数のスクリプトなど -->
-<script type="text/javascript" src="js/jquery.cookie.js"></script>
-<script type='text/javascript' src='js/my_script.js'></script>
 </body>
 </html>
