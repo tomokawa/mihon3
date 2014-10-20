@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- IE8+に対して「IE=edge」と指定することで、利用できる最も互換性の高い最新のエンジンを使用するよう指示できます
+		参考: https://www.modern.ie/en-us/performance/how-to-use-x-ua-compatible -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+
+<meta name="description" content="株式会社septaのウェブサイト。" /><!-- ページの紹介文 -->
+<meta name="keywords" content="株式会社septa,septa,sept@,セプタ" /><!-- 検索キーワード -->
+<meta name="author" content="" /><!-- 著者情報 -->
+
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<!-- モバイル端末への対応、ページをビューポートの幅に合わせてレンダリング（Android,iOS6以降） -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="css/1_common.css" />
+<link rel="stylesheet" type="text/css" href="css/2_sp.css" />
+<link rel="stylesheet" type="text/css" href="css/3_tb.css" />
+<link rel="stylesheet" type="text/css" href="css/4_pc.css" />
+<!-- IE8以下用に2つのスクリプトを記述
+		html5shiv.js: IE8以下にHTML5の要素を認識するようにさせる
+		respond.js: IE8以下にMedia Queriesの代替え機能を提供 -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- iOS/Android用のアイコン指定 -->
+<meta name="mobile-web-app-capable" content="yes" />
+<link rel="icon" href="apple-touch-icon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<title>見本サイト3</title>
+<!-- スクリプトでブロッキングを起こさないものはここに記述
+		可能であれば「async（文書の読み込みが完了した時点でスクリプトを実行）」を使用
+		Example: <script src="" async></script> -->
+<script type='text/javascript' src='js/jquery-2.1.1.min.js'></script>
+<script type="text/javascript">
+<!--
+
+$(function(){
+	$("nav ul li").hover(function(){
+		$(this).children('ul').slideToggle('fast');
+	},function(){
+		$(this).children('ul').slideToggle('fast');
+	});
+});
+//-->
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+	<header>
+		<h1><a href="index.html" title="TOPページ"><img src="images/logo.jpg" alt="sept@" /></a></h1>
+		<div id="btn">
+			<div id="btnview">
+				<span>表示：</span>
+				<button id="btnPC" type="button" name="#" value="#">パソコン</button>
+				<button id="btnSP" type="button" name="#" value="#">スマホ</button>
+			</div><!-- btnview -->
+			
+			<div id="btnsize">
+				<span>文字サイズ：</span>
+				<button id="btnL" type="button" name="#" value="#">大</button>
+				<button id="btnM" type="button" name="#" value="#">中</button>
+				<button id="btnS" type="button" name="#" value="#">小</button>
+			</div><!-- btnsize -->
+			
+			<!--
+			<div id="btnLR">
+				<button id="btnLeft" type="button" name="#" value="#">左寄</button>
+				<button id="btnRight" type="button" name="#" value="#">右寄</button>
+			</div><!-- btnlr -->
+		</div><!-- btn -->
+	</header>
+	
+	<nav>
+		<ul>
+			<li>メニュー1
+				<ul>
+					<li><a href="#">1-1</a></li>
+					<li><a href="#">1-2</a></li>
+					<li><a href="#">1-3</a></li>
+					<li><a href="#">1-4</a></li>
+					<li><a href="#">1-5</a></li>
+				</ul>
+			</li>
+			<li>メニュー2
+				<ul>
+					<li><a href="#">2-1</a></li>
+					<li><a href="#">2-2</a></li>
+					<li><a href="#">2-3</a></li>
+					<li><a href="#">2-4</a></li>
+					<li><a href="#">2-5</a></li>
+				</ul>
+			</li>
+			<li>メニュー3
+				<ul>
+					<li><a href="#">3-1</a></li>
+					<li><a href="#">3-2</a></li>
+					<li><a href="#">3-3</a></li>
+					<li><a href="#">3-4</a></li>
+					<li><a href="#">3-5</a></li>
+				</ul>
+			</li>
+			<li>メニュー4
+				<ul>
+					<li><a href="#">4-1</a></li>
+					<li><a href="#">4-2</a></li>
+					<li><a href="#">4-3</a></li>
+					<li><a href="#">4-4</a></li>
+					<li><a href="#">4-5</a></li>
+				</ul>
+			</li>
+			<li>メニュー5
+				<ul>
+					<li><a href="#">5-1</a></li>
+					<li><a href="#">5-2</a></li>
+					<li><a href="#">5-3</a></li>
+					<li><a href="#">5-4</a></li>
+					<li><a href="#">5-5</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="top">
+		<img id="img1" src="images/4.jpg" alt="#" />
+		<img id="img2" src="images/3.jpg" alt="#" />
+	</div>
+	
+	<div id="moji_size">
+		<section id="sect1">
+			<h2>新着情報</h2>
+			<div><!-- h2残してのoverflow:auto用 -->
+				<table>
+					<tr><th>11/30</th><td><a href="">月例報告(10月期)</a></td></tr>
+					<tr><th>10/31</th><td><a href="">月例報告(9月期)</a></td></tr>
+					<tr><th>9/30</th> <td><a href="">月例報告(8月期)</a></td></tr>
+					<tr><th>8/31</th> <td><a href="">月例報告(7月期)</a></td></tr>
+					<tr><th>7/31</th> <td><a href="">月例報告(6月期)</a></td></tr>
+					<tr><th>6/30</th> <td><a href="">月例報告(5月期)</a></td></tr>
+					<tr><th>5/31</th> <td><a href="">月例報告(4月期)</a></td></tr>
+					<tr><th>4/30</th> <td><a href="">月例報告(3月期)</a></td></tr>
+					<tr><th>3/31</th> <td><a href="">月例報告(2月期)</a></td></tr>
+					<tr><th>2/28</th> <td><a href="">月例報告(1月期)</a></td></tr>
+					<tr><th>1/31</th> <td><a href="">月例報告(12月期)</a></td></tr>
+					<tr><th>1/1</th>  <td><a href="">新年の御挨拶</a></td></tr>
+					<tr><th>12/28</th><td><a href="">月例報告(11月期)</a></td></tr>
+					<tr><th>12/10</th><td><a href="">年末年始の営業について</a></td></tr>
+				</table>
+			</div>
+		</section><!-- sect1 -->
+		
+		<div id="div1">
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+		</div><!-- div1 -->
+		
+		<section id="sect2">
+			<h2>section2タイトル</h2>
+			<article>
+				<p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入りまこす。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入りまこす。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+			</article>
+		</section><!-- sect2 -->
+		
+		<div id="div2">
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+			<a href="#"><img src="images/noimage_tmb.jpg" alt="#" /></a>
+		</div><!-- div2 -->
+		
+		<footer>
+			<article id="legal">
+				<div>
+					<ul>
+						<li><a href="#">サイトマップ</a></li>
+						<li><a href="#">個人情報保護方針</a></li>
+						<li><a href="#">採用情報</a></li>
+						<li><a href="#">お問い合わせ</a></li>
+						<li><a href="#">メールマガジン</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><a href="#">会社概要</a></li>
+						<li><a href="#">支店・支社一覧</a></li>
+						<li><a href="#">リスト3</a></li>
+						<li><a href="#">リスト4</a></li>
+						<li><a href="#">リスト5</a></li>
+						<li><a href="#">リスト6</a></li>
+						<li><a href="#">リスト7</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><a href="#">リスト1</a></li>
+						<li><a href="#">リスト2</a></li>
+						<li><a href="#">リスト3</a></li>
+						<li><a href="#">リスト4</a></li>
+						<li><a href="#">リスト5</a></li>
+						<li><a href="#">リスト6</a></li>
+					</ul>
+				</div>
+				<div>
+					<p>
+						ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+					</p>
+				</div>
+			</article><!-- legal -->
+			<address>Copyright &copy; 2014 Tomokazu Kawabata All Rights Reserved.</address>
+		</footer>
+	</div><!-- moji_size -->
+</div><!-- wrapper -->
+
+<!-- スクリプトでブロッキングを起こすものはここに記述
+		ブロッキングを起こす原因としては、
+		CSSのセレクタ操作（IE）、負荷の高いDOM操作、多数のスクリプトなど -->
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type='text/javascript' src='js/my_script.js'></script>
+</body>
+</html>

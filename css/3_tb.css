@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@media(min-width:480px){
+	#wrapper{
+	}
+	
+	header{
+		overflow:hidden;
+	}
+	h1{
+		float:left;
+	}
+	
+	#btn{
+		line-height:50px;
+		float:right;
+	}
+		#btn div{
+			float:left;
+		}
+		#btnview{
+			
+		}
+		#btnsize{
+			
+		}
+		#btnLR{
+			display:none;
+		}
+	
+	nav{
+		position:absolute;
+	}
+		nav ul li{
+			float:left;
+			width:20%;
+		}
+			nav ul li ul li{
+				clear:both;
+			}
+	
+	.top{
+		padding-top:30px;/* clear:bothによりmargin不可; */
+	}
+	
+	#sect1{
+		width:;
+		float:left;
+	}
+	
+	#div1{
+		float:left;
+	}
+		#div1 img{
+			width:;
+			float:left;
+		}
+	
+	#sect2{
+		width:;
+		float:right;
+	}
+	
+	#div2{
+		float:right;
+	}
+		#div2 img{
+			width:;
+			float:left;
+		}
+	
+footer{
+	clear:both;
+}
+		footer div{
+			width:;
+			float:left;
+		}
+	address{
+		clear:both;
+	}
+}

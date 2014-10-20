@@ -1,0 +1,182 @@
+@charset "UTF-8";
+html,body,h1,h2,h3,ul{
+	margin:0;
+	padding:0;
+}
+body{
+	color:#000;
+	background-color:#fff;
+}
+
+h1{
+	color:#fff;
+	height:50px;
+	font-size:2.3em;
+}
+
+h2{
+	padding-left:5px;
+	border-left:solid 10px #33f;
+	border-bottom:solid 2px #f90;
+}
+
+p{
+	text-indent:1em;
+	line-height:1.3em;
+}
+
+img{
+	vertical-align:bottom;
+}
+a img{
+	border-style:none;
+}
+
+a{
+	color:#00f;
+	text-decoration:none;
+}
+	a:link{
+		
+	}
+	a:visited{
+	}
+	a:hover{
+		color:#f60;
+		text-decoration:underline;
+	}
+	a:active{
+		
+	}
+	
+	li{
+		line-height:1.5em;
+	}
+
+#btnLeft{
+	display:none;
+}
+
+/*段組み*/
+#wrapper{
+	background-color:#fff;
+	margin:auto;
+}
+
+header{
+	background-color:#09f;
+}
+	#btn{
+		font-size:0.8em;
+	}
+		#btn span{
+		}
+		#btn div{
+			margin:0 0.5em 0 0.5em;
+		}
+
+nav{
+	clear:both;
+	width:100%;
+}
+
+.top{
+}
+	.top img{
+		width:100%;
+		max-width:400px;
+	}
+	.top #img2{
+		float:right;
+	}
+
+section{
+	clear:both;
+	padding:5px;
+}
+	#sect1 div{
+		height:160px;
+		overflow:auto;
+	}
+
+article{
+	padding:5px;
+}
+
+aside{
+	padding:5px;
+}
+
+#div1,#div2{
+	padding:5px;
+}
+	#div1 img,#div2 img{
+		margin:5px;
+	}
+
+footer{
+	background-color:#ccc;
+}
+	footer article{
+	}
+		footer div{
+			margin:5px;
+		}
+			footer ul{
+				margin-left:15px;
+				list-style-image:url("../images/arrow.png");
+			}
+	address{
+		color:#fff;
+		background-color:#33f;
+		clear:both;
+		font-size:0.8em;
+		text-align:center;
+	}
+
+
+
+nav ul{
+	list-style-type:none;
+}
+nav ul li{
+	color:#fff;
+	background-color:#33f;
+	background-image:url("../images/menu_bg.jpg");
+	font-size:1.2em;
+	font-weight:bold;
+	text-align:center;
+	line-height:30px;
+	/*
+	border:solid 1px #f90;
+	*/
+}
+
+nav ul li:hover{
+	color:#555;
+	background-color:#99f;
+	background-image:url("../images/menu_bg_hover.jpg");
+}
+nav ul li ul{
+	display:none;
+}
+nav ul li ul li{
+	background-color:#66f;
+	background-image:url("../images/menu_bg2.jpg");
+	width:100%;
+	font-size:1em;
+}
+nav ul li ul li:hover{
+	background-color:#33f;
+	background-image:url("../images/menu_bg2_hover.jpg");
+}
+nav a{
+	display:inline-block;
+	width:100%;
+	color:#fff;
+}
+nav a:hover{
+	text-decoration:none;
+	color:#333;
+}
+

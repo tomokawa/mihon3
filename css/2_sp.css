@@ -1,0 +1,6 @@
+@charset "UTF-8";
+@media(max-width:479px){
+	h1{
+		text-align:center;
+	}
+}
