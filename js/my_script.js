@@ -107,7 +107,7 @@ $(function(){
 $(function() {
 	$(window).setBreakpoints({
 		distinct: true,
-		breakpoints: [ 1, 480, 980 ]
+		breakpoints: [ 1, 480 ]
 	});
 	
 	$(window).bind('enterBreakpoint1',function() {
@@ -116,11 +116,6 @@ $(function() {
 		});
 	});
 	$(window).bind('enterBreakpoint480',function() {
-		$('.sp-img').each(function() {
-			$(this).attr('src', $(this).data('img').replace('_sp', '_tb'));
-		});
-	});
-	$(window).bind('enterBreakpoint980',function() {
 		$('.sp-img').each(function() {
 			$(this).attr('src', $(this).data('img').replace('_sp', '_pc'));
 		});

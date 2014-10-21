@@ -24,8 +24,11 @@
 			}
 	
 	.top{
-		margin-top:32px;/* 30 +border1*2 */
+		margin-top:42px;/* 30 +border1*2 */
 	}
+		.top img{
+			width:980px;
+		}
 	
 	#sect1{
 		width:510px;/* 980 -aside1(450 +padding5*2) -自padding5*2 */
