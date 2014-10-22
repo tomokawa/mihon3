@@ -95,7 +95,7 @@ $(function(){
 //メニュー展開
 $(function(){
 	$('ul.sub').hide();
-	$('ul.nav li').click(function(){
+	$('ul.nav li').hover(function(){
 		$('ul:not(:animated)',this).slideDown('fast');
 	},
 	function(){
