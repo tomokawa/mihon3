@@ -83,20 +83,22 @@ nav{
 	width:100%;
 }
 
+	.top{
+	}
 	.top img{
 		width:100%;
 	}
-	.top #img2{
-		float:right;
-	}
 
 section{
-	clear:both;
 	padding:5px;
 }
 	#sect1 div{
 		height:160px;
 		overflow:auto;
+	}
+	#sect2{
+		clear:both;
+		
 	}
 
 article{

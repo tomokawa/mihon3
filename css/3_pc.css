@@ -1,49 +1,56 @@
 @charset "UTF-8";
-@media(min-width:980px){
+@media(min-width:480px){
 	#wrapper{
 		width:980px;
 	}
 	
+	header{
+		margin-bottom:42px;/* 40 +border1*2 */
+	}
+		h1{
+			float:left;
+		}
+	
 	#btn div{
 		line-height:50px;
 	}
-		#btnsize{
-			clear:none;
-		}
-	
 	nav{
 		width:980px;
+		position:absolute;
+		top:50px;
 	}
 		nav ul li{
 			width:194px;
 			border:solid 1px #999;
+			float:left;
 		}
 			nav ul li ul li{
 				position:relative;
 				left:-1px;
 			}
 	
-	.top{
-		margin-top:42px;/* 30 +border1*2 */
-	}
-		.top img{
+		.top{
 			width:980px;
 		}
 	
 	#sect1{
-		width:510px;/* 980 -aside1(450 +padding5*2) -自padding5*2 */
+		width:510px;/* 980 -div1(450 +padding5*2) -自padding5*2 */
+		float:left;
 	}
-	
+			
 	#div1{
 		width:450px;/* 5(80 +margin5*2) */
+		float:right;
 	}
 	
 	#sect2{
 		width:690px;/* 980 -(270 +padding5*2) -自padding5*2 */
+		float:right;
 	}
 	
 	#div2{
 		width:270px;/* 3(80 +margin5*2) */
+		float:left;
 	}
 	
 		footer div{

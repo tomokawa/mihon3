@@ -36,19 +36,19 @@ _gaq.push(['_trackPageview']);
 //文字サイズ
 $(function(){
 	$('#btnS').click(function(){
-		$('#moji_size').css('font-size','0.8em');
+		$('.moji_size').css('font-size','0.8em');
 	});
 });
 
 $(function(){
 	$('#btnM').click(function(){
-		$('#moji_size').css('font-size','1em');
+		$('.moji_size').css('font-size','1em');
 	});
 });
 
 $(function(){
 	$('#btnL').click(function(){
-		$('#moji_size').css('font-size','1.4em');
+		$('.moji_size').css('font-size','1.4em');
 	});
 });
 
