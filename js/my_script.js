@@ -117,7 +117,7 @@ $(function() {
 	});
 	$(window).bind('enterBreakpoint480',function() {
 		$('.sp-img').each(function() {
-			$(this).attr('src', $(this).data('img').replace('_sp', '_pc'));
+			$(this).attr('src', $(this).data('img').replace('_sp.jpg', '_pc.gif'));
 		});
 	});
 });
